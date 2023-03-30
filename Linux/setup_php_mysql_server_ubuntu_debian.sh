@@ -6,7 +6,7 @@ fi
 # Update the system
 apt update && apt upgrade -y
 # Installing PHP MYSQL Server (apache) and CertBot(apache) for SSL
-apt install lamp-server^ certbot python3-certbot-apache wget curl -y
+apt install lamp-server^ certbot python3-certbot-apache wget curl zip unzip -y
 
 ##Create New User.
 read -p "Do you want to create a new user? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
