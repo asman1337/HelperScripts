@@ -1,0 +1,1 @@
+wget script.sh
