@@ -20,7 +20,7 @@ adduser $user &&
 ##Download
 read -p "Do you want to download Wordpress? (Y/N): " confirm2 && [[ $confirm2 == [yY] || $confirm2 == [yY][eE][sS] ]] || exit 1
 echo "Saving wordpress to ${user}'s home directory.."
-wget https://wordpress.org/latest.zip /home/$user/wordpress.zip
+wget -O /home/$user/wordpress.zip https://wordpress.org/latest.zip
 echo "Downloaded Location : /home/${user}/wordpress.zip"
 echo "Done!"
 exit 1
